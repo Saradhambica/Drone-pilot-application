@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">SuperBeeApp</string>
+    <string name="app_logo_desc">App Logo</string>
+
+    <!-- Step 1 Fragment Strings -->
+    <string name="step1_title">Step 1: Location Details</string>
+    <string name="location_label">1. Village/Town, Tehsil, District, State</string>
+    <string name="latitude_longitude_label">2. Latitude and Longitude</string>
+    <string name="altitude_label">3. Altitude (m)</string>
+    <string name="surrounding_label">4. Surrounding</string>
+    <string name="next_button1">Next</string>
+
+    <string name="step2_title">Step 2: Crop Details</string>
+    <string name="crop_name_label">1. Crop Name</string>
+    <string name="variety_label">2. Variety/Hybrid</string>
+    <string name="type_label">3. Type (Rainfed/Irrigated)</string>
+    <string name="spacing_label">4. Spacing (row(m) × plant(m)) / plant population (No/ha)</string>
+    <string name="date_sowing_label">5. Date of Sowing</string>
+    <string name="date_hint">DD/MM/YYYY</string>
+    <string name="stage_crop_label">6. Stage of Crop (as on date of spraying)</string>
+    <string name="shaded_area_label">7. Shaded Area (%, if measured OR fully, partly, sparsely based on observations)</string>
+    <string name="back_button">Back</string>
+    <string name="next_button2">Next</string>
+
+    <string name="step3_title">Step 3: Drone Details</string>
+    <string name="classification_label">1. Classification (Small/Medium/Large)</string>
+    <string name="category_label">2. Category (Multi-rotor/Hybrid) and No. of Rotors</string>
+    <string name="max_weight_label">3. Maximum Take-off Weight (kg)</string>
+    <string name="power_source_label">4. Power Source (Battery-mAh/Fuel-type)</string>
+    <string name="other_specs_label">5. Other Specifications (Control range, endurance, flight time, controller, fail-safe features)</string>
+    <string name="drone_photo_label">6. Photographs of the drone model used in spraying</string>
+    <string name="choose_file_button">Choose Photo</string>
+    <string name="step3_back_button">Back</string>
+    <string name="next_button3">Next</string>
+
+    <string name="step4_title">Step 4: Spraying System Details</string>
+    <string name="tank_capacity_label">Tank Capacity (lit)</string>
+    <string name="nozzle_mounting_label">Nozzle Mounting (on boom/below propeller)</string>
+    <string name="boom_length_label">Length of boom (m)</string>
+    <string name="nozzle_count_label">Number of Nozzles</string>
+    <string name="nozzle_type_label">Type of Nozzle</string>
+    <string name="cone_angle_label">Cone Angle</string>
+    <string name="droplet_size_label">Droplet Size (μm)</string>
+    <string name="flow_rate_label">Discharge / Flow rate (lit/min)</string>
+    <string name="operating_pressure_label">Operating Pressure (kg/Cm²)</string>
+    <string name="step4_back_button">Back</string>
+    <string name="next_button4">Next</string>
+
+    <!-- Step 5-A: Formulations Sprayed -->
+    <string name="step5a_title">Step 5-A: Formulations Sprayed</string>
+
+    <string name="target_disease_label">Target Disease/Pest</string>
+    <string name="formulation_type_label">Type of Formulation</string>
+    <string name="pesticide_name_label">Name of Pesticide</string>
+    <string name="concentration_label">Concentration (gai/lit or % or ml)</string>
+    <string name="dosage_label">Dosage (g/ha or ml/ha)</string>
+    <string name="water_volume_label">Water Volume (lit/ha)</string>
+
+    <string name="step5a_back_button">Back</string>
+    <string name="next_button5">Next</string>
+
+
+    <!-- Step 5-B: Crop Nutrients -->
+    <string name="step5b_title">Step 5-B: Crop nutrients (chemical nutrients / bio-fertilizers)</string>
+
+    <string name="target_deficiency_label2">Target deficiency</string>
+    <string name="formulation_type_label2">Type of formulation</string>
+    <string name="crop_nutrient_name_label2">Name of crop nutrient</string>
+    <string name="nutrient_type_label2">Type of nutrient (nano/micro/macro)</string>
+    <string name="concentration_label2">Concentration (g ai/lit or % or ml/lit)</string>
+    <string name="dosage_label2">Dosage (g/ha or ml/ha)</string>
+    <string name="water_volume_label2">Water volume (lit/ha)</string>
+
+    <string name="step5b_back_button">Back</string>
+    <string name="next_button5b">Next</string>
+
+    <!-- Step 6-A: Environment -->
+    <string name="step6a_title">Step 6-A: Environment</string>
+    <string name="temperature_label">Temperature (°C)</string>
+    <string name="relative_humidity_label">Relative Humidity (%)</string>
+    <string name="wind_label">Wind Speed (km/hr) and Direction</string>
+
+    <string name="step6a_back_button">Back</string>
+    <string name="next_button6">Next</string>
+
+    <!-- Step 6-B: Drone operating parameters -->
+    <string name="step6b_title">Step 6-B: Drone Operating Parameters</string>
+    <string name="flight_modes_label">Flight Modes (Manual/Autonomous/A-B mode)</string>
+    <string name="height_canopy_label">Height above Canopy (m)</string>
+    <string name="swath_label">Swath (m)</string>
+    <string name="overlap_label">Overlap (%)</string>
+    <string name="spray_width_label">Spray Width (m)</string>
+    <string name="flight_direction_label">Flight Direction (Windward/Leeward)</string>
+    <string name="time_of_spray_label">Time of Spray (start and end)</string>
+    <string name="multiple_flight_label">Multiple Flight Details</string>
+
+    <string name="step6b_back_button">Back</string>
+    <string name="next_button6b">Next</string>
+
+    <!-- Step 6-C: Drone operating parameters -->
+    <string name="step6c_title">Step 6-C: Drone Operating Parameters</string>
+    <string name="field_capacity_theoretical_label">Field Capacity - Theoretical (ha/hr)</string>
+    <string name="field_capacity_actual_label">Field Capacity - Actual (ha/hr)</string>
+    <string name="vmd_label">Volume Median Diameter VMD (μm)</string>
+    <string name="nmd_label">Number Median Diameter NMD (μm)</string>
+    <string name="droplet_density_label">Droplet Density (No./cm²)</string>
+    <string name="spray_uniformity_label">Spray Uniformity (%)</string>
+    <string name="control_efficiency_label">Control Efficiency (%)</string>
+    <string name="phyto_toxicity_label">Phyto-toxicity Observations/Effects</string>
+    <string name="efficacy_label">Efficacy</string>
+    <string name="other_observations_label">Other Observations</string>
+
+    <string name="step6c_back_button">Back</string>
+    <string name="submit_button6c">Submit</string>
+
+    //summary fragment
+    <string name="form_submission">✅ Thank you!! Form submitted successfully"</string>
+    <string name="sop_recap">SOP Recap</string>
+    <string name="launch_qgc">🚀 LAUNCH QGC</string>
+    <string name="back_to_dashboard">← BACK TO DASHBOARD</string>
+    <string name="download_pdf">📄 DOWNLOAD PDF</string>
+
+    //splash activity
+    <string name="splash_name">SuperBee Drone Management</string>
+
+    //login activity
+    <string name ="pg_heading">SUPERBEE AERONAUTICS</string>
+    <string name ="login_heading">Login</string>
+    <string name ="button_login">LOG IN</string>
+    <string name ="new_user">New user?</string>
+    <string name ="sign_up_here">Sign Up here</string>
+</resources>

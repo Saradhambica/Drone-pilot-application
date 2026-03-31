@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/step1Fragment">
+
+    <fragment
+        android:id="@+id/step1Fragment"
+        android:name="com.superbee.aeronautics.sopform.Step1Fragment"
+        android:label="Step 1">
+        <action
+            android:id="@+id/action_step1_to_step2"
+            app:destination="@id/step2Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/step2Fragment"
+        android:name="com.superbee.aeronautics.sopform.Step2Fragment"
+        android:label="Step 2">
+        <action
+            android:id="@+id/action_step2_to_step3"
+            app:destination="@id/step3Fragment" />
+    </fragment>
+
+
+
+
+    <fragment
+        android:id="@+id/step3Fragment"
+        android:name="com.superbee.aeronautics.sopform.Step3Fragment"
+        android:label="Step 3">
+    <action
+        android:id="@+id/action_step3_to_step4"
+        app:destination="@id/step4Fragment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/step4Fragment"
+        android:name="com.superbee.aeronautics.sopform.Step4Fragment"
+        android:label="Step 4">
+        <action
+            android:id="@+id/action_step4_to_step5"
+            app:destination="@id/step5AFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/step5AFragment"
+        android:name="com.superbee.aeronautics.sopform.Step5AFragment"
+        android:label="Step 5A">
+        <action
+            android:id="@+id/action_step5A_to_step5B"
+            app:destination="@id/step5BFragment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/step5BFragment"
+        android:name="com.superbee.aeronautics.sopform.Step5BFragment"
+        android:label="Step 5B">
+        <action
+            android:id="@+id/action_step5B_to_step6A"
+            app:destination="@id/step6AFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/step6AFragment"
+        android:name="com.superbee.aeronautics.sopform.Step6AFragment"
+        android:label="Step 6A">
+        <action
+            android:id="@+id/action_step6A_to_step6B"
+            app:destination="@id/step6BFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/step6BFragment"
+        android:name="com.superbee.aeronautics.sopform.Step6BFragment"
+        android:label="Step 6B">
+        <action
+            android:id="@+id/action_step6B_to_step6C"
+            app:destination="@id/step6CFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/step6CFragment"
+        android:name="com.superbee.aeronautics.sopform.Step6CFragment"
+        android:label="Step 6C">
+        <action
+            android:id="@+id/action_step6C_to_SummaryFragment"
+            app:destination="@id/summaryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.superbee.aeronautics.sopform.SummaryFragment"
+        android:label="summary" />
+
+
+
+
+
+</navigation>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/step6b_title"
+                android:textColor="#003D6B"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Flight Modes -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/flight_modes_label"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/et_flight_modes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/steps_background"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:inputType="text"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Height above Canopy -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/height_canopy_label"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/et_height_canopy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/steps_background"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Swath -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/swath_label"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/et_swath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/steps_background"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Overlap -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/overlap_label"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/et_overlap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/steps_background"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Spray Width -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/spray_width_label"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/et_spray_width"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/steps_background"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Flight Direction -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/flight_direction_label"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/et_flight_direction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/steps_background"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:inputType="text"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Time of Spray -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time_of_spray_label"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/et_time_of_spray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/steps_background"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:inputType="text"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Multiple Flight Details -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/multiple_flight_label"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/et_multiple_flight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/steps_background"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:inputType="text"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Navigation Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end">
+
+                <Button
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/step6b_back_button"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#9E9E9E"
+                    android:layout_marginEnd="16dp"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp" />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/next_button6b"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#003D6B"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

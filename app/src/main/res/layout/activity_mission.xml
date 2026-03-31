@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/missionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MissionActivity">
+
+    <!-- MAPVIEW -->
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <!-- FULLSCREEN BUTTON TOP-RIGHT -->
+    <ImageButton
+        android:id="@+id/btnFullscreenMap"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/mapView"
+        android:layout_alignEnd="@id/mapView"
+        android:layout_margin="10dp"
+        android:background="@android:color/transparent"
+        android:padding="4dp"
+        android:src="@drawable/ic_fullscreen"
+        android:contentDescription="Fullscreen Map" />
+
+    <!-- 3-DOTS MENU BUTTON TOP-LEFT -->
+    <ImageButton
+        android:id="@+id/btnMoreOptions"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/mapView"
+        android:layout_alignStart="@id/mapView"
+        android:layout_margin="10dp"
+        android:background="@android:color/transparent"
+        android:padding="4dp"
+        android:src="@drawable/three_dots"
+        android:contentDescription="More Options" />
+
+    <!-- SCROLLABLE FORM BELOW MAP -->
+    <ScrollView
+        android:id="@+id/formScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mapView"
+        android:fillViewport="true"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Coordinates -->
+            <EditText
+                android:id="@+id/etLatitude"
+                android:hint="Latitude"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etLongitude"
+                android:hint="Longitude"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnGoToLocation"
+                android:text="Go to Location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#8000FF"
+                android:textColor="#FFFFFF" />
+
+            <!-- Mode buttons -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/btnBoundaryMode"
+                    android:text="Boundary Mode"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#8000FF"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/btnWaypointMode"
+                    android:text="Waypoint Mode"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:backgroundTint="#8000FF"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- Undo / Clear -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+
+                <Button
+                    android:id="@+id/btnUndo"
+                    android:text="Undo"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#8000FF"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/btnClear"
+                    android:text="Clear"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:backgroundTint="#8000FF"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- Mission Details -->
+            <EditText
+                android:id="@+id/etCrop"
+                android:hint="Crop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/etAcres"
+                android:hint="Acres"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etSoilType"
+                android:hint="Soil Type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etDroneUIN"
+                android:hint="Drone UIN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etAltitude"
+                android:hint="Altitude"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etSpeed"
+                android:hint="Speed"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnCreateMission"
+                android:text="Create Mission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#8000FF"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

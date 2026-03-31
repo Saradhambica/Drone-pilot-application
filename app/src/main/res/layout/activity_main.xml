@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ls_image"
+        android:alpha="0.3" />
+
+    <!-- RecyclerView (hidden on dashboard, visible on farmer selection screen) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerFarmers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        android:visibility="gone" />
+
+    <!-- SCROLL CONTENT -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- HEADER BLOCK -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_background"
+                android:padding="20dp"
+                android:elevation="4dp"
+                android:layout_marginTop="40dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/image"
+                        android:layout_marginEnd="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SUPERBEE AERONAUTICS"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#1976D2" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/welcomeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome, User!"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <!-- Change Farmer Text -->
+            <TextView
+                android:id="@+id/changeFarmerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Farmer"
+                android:textColor="#1A237E"
+                android:textSize="16sp"
+                android:padding="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- MENU GRID -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="24dp">
+
+                <!-- ROW 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Submit SOP Form -->
+                    <LinearLayout
+                        android:id="@+id/submitSopCard"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/menu_card"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:elevation="4dp"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@android:drawable/ic_menu_edit"
+                            android:layout_marginBottom="12dp"
+                            app:tint="#4CAF50" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Submit SOP Form"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="#212121" />
+                    </LinearLayout>
+
+                    <!-- Mission -->
+                    <LinearLayout
+                        android:id="@+id/missionCard"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/menu_card"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:layout_marginStart="8dp"
+                        android:elevation="4dp"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/drone_icon"
+                            android:layout_marginBottom="12dp"
+                            app:tint="#3F51B5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mission"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="#212121" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- ROW 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <!-- My Profile -->
+                    <LinearLayout
+                        android:id="@+id/profileCard"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/menu_card"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:elevation="4dp"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@android:drawable/ic_menu_myplaces"
+                            android:layout_marginBottom="12dp"
+                            app:tint="#FF9800" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My Profile"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="#212121" />
+                    </LinearLayout>
+
+                    <!-- SAGCS -->
+                    <LinearLayout
+                        android:id="@+id/SagcsCard"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/menu_card"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:layout_marginStart="8dp"
+                        android:elevation="4dp"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/drone_icon"
+                            android:layout_marginBottom="12dp"
+                            app:tint="#FFC107" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SAGCS"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="#212121" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

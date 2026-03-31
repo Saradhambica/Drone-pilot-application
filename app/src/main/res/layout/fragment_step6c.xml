@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/step6c_title"
+                android:textColor="#003D6B"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Field Capacity - Theoretical -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/field_capacity_theoretical_label"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/et_field_capacity_theoretical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/steps_background"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Field Capacity - Actual -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/field_capacity_actual_label"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/et_field_capacity_actual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/steps_background"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Volume Median Diameter VMD -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vmd_label"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/et_vmd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/steps_background"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Number Median Diameter NMD -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nmd_label"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/et_nmd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/steps_background"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Droplet Density -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/droplet_density_label"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/et_droplet_density"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/steps_background"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Spray Uniformity -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/spray_uniformity_label"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/et_spray_uniformity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/steps_background"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Control Efficiency -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/control_efficiency_label"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/et_control_efficiency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/steps_background"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Phyto-toxicity -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phyto_toxicity_label"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/et_phyto_toxicity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/steps_background"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:inputType="text"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Efficacy -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/efficacy_label"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/et_efficacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/steps_background"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:inputType="text"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Other Observations -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/other_observations_label"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/et_other_observations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/steps_background"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:inputType="text"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Navigation Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end">
+
+                <Button
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/step6c_back_button"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#9E9E9E"
+                    android:layout_marginEnd="16dp"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp" />
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/submit_button6c"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#003D6B"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>
