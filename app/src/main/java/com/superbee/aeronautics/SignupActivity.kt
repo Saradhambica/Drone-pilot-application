@@ -57,7 +57,7 @@ class SignupActivity : AppCompatActivity() {
             if (!phoneNumber.startsWith("+")) {
                 Toast.makeText(
                     this,
-                    "Please enter full phone number with country code (e.g. +918123456789)",
+                    "Please enter phone number with country code (e.g. +918123456789)",
                     Toast.LENGTH_LONG
                 ).show()
                 return@setOnClickListener
